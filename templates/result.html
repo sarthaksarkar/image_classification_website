@@ -1,0 +1,27 @@
+{%extends 'main.html'%}
+{% block background_image %}{{background_image}}{% endblock %}
+{%block content%}
+<img src="{{img_url}}" alt="My image">
+{% with messages=get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <p class="message-box">{{message}}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<style>
+  .message-box {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+<form action="result.html" method="post">
+    <p><input type="submit" value="return"></p>
+</form>
+{%endblock%}

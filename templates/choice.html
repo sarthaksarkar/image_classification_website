@@ -1,0 +1,15 @@
+{%extends 'main.html'%}
+{%block content%}
+<form action="choice.html" method="post">
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    </div>
+    <select class="custom-select" id="inputGroupSelect01" name="nm">
+      <option value="1">Star Wars(YODA,LUKE SKYWALKER,R2-D2,MACE WINDU,GENERAL GRIEVOUS)</option>
+      <option value="2">Marvel(SPIDERMAN,VENOM,BLACKWIDOW,CAPTAIN-AMERICA,IRON-MAN)</option>
+    </select>
+  </div>
+  <p><input type="submit" value="submit"></p>
+</form>
+{%endblock%}
