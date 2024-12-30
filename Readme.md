@@ -13,7 +13,7 @@ A web application that identifies LEGO characters from Marvel or Star Wars using
 - **Machine Learning**: TensorFlow (ResNet model)
 
 ## Getting Started
-
+Download the file fully in you computer as the backend saves image at the same time and puts it into the model. If you run it by just cloning then it might show an error as even after saving the imaage in the static file the backend might not able to access the image as it had not been commited.
 ### Prerequisites
 - Python 3.7+
 - Virtual environment (recommended)
